@@ -1,0 +1,8 @@
+<label for="cant">Introduce el número de Números a generar: </label>
+<input type="number" [(ngModel)]="cantidad" placeholder="Introduce un numero" name="cantidad" id="cant">
+<button (click)="aleatorio()">Genera</button>
+<ul>
+  <li *ngFor="let numero of listaNumeros">
+    {{ numero }}
+  </li>
+</ul>
